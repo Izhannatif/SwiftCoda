@@ -154,6 +154,7 @@ const Services = () => {
     return (
         <ParallaxProvider>
             <section
+            id='services'
                 ref={servicesRef}
                 className={`pl-0 lg:pl-20 py-20 pr-5 flex flex-col transition-colors duration-700 ${isServicesInView ? 'bg-white text-[#1f1f1f] services-section ' : 'bg-[#030303] text-white '
                     }`}

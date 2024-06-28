@@ -7,7 +7,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import { MdArrowOutward } from "react-icons/md";
 import TicTacToe from './TicTacToe';
 import { CiMenuFries } from "react-icons/ci";
-
+import {Link} from 'react-scroll';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,14 +33,14 @@ const Header = () => {
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <div className="flex flex-col space-y-4" onClick={toggleMenu}>
-          {menuOpen ? <RxCross1 size={30} className='font-bold rotate-90' /> : <BsThreeDotsVertical size={30} className='' />}
+          {menuOpen ? <RxCross1 size={30} className='font-bold rotate-90' /> : <CiMenuFries size={30} className='font-black rotate-180' />}
         </div>
         <div className="flex flex-col space-y-3 mb-2">
           <a href="mailto:hello@swiftcoda.com"><MdOutlineAlternateEmail size={24} /></a>
           <a href="https://instagram.com"><FaInstagram size={24} /></a>
           <a href="https://linkedin.com"><FaLinkedin size={24} /></a>
         </div>
-        <div className="text-2xl pl-20 rotate-[-90deg]">SwiftCoda</div>
+        <div className="text-2xl pl-20 rotate-[-90deg]">SwiftCoda.</div>
       </motion.div>
 
       <AnimatePresence>
@@ -56,42 +56,42 @@ const Header = () => {
             <div className="w-full lg:w-1/2 pl-0 lg:pl-20 h-full">
               <ul className="text-2xl h-full flex flex-col justify-evenly font-bold lg:font-semibold">
                 <li className='overlay-menu-item text-5xl lg:text-7xl'>
-                  <a href="#home" onClick={toggleMenu}>Home</a>
+                  <Link to='home' onClick={toggleMenu}>Home</Link>
                   <div className='overlay-menu-arrow'>
                     <MdArrowOutward size={50} className=' bg-black rounded-full text-white p-1' />
                   </div>
                 </li>
                 <hr className='w-full border-stone-500' />
                 <li className='overlay-menu-item text-5xl lg:text-7xl'>
-                  <a href="#about" onClick={toggleMenu}>About</a>
+                  <Link to='about' onClick={toggleMenu}>About</Link>
                   <div className='overlay-menu-arrow'>
                     <MdArrowOutward size={50} className=' bg-black rounded-full text-white p-1' />
                   </div>
                 </li>
                 <hr className='w-full border-stone-500' />
                 <li className='overlay-menu-item text-5xl lg:text-7xl'>
-                  <a href="#work" onClick={toggleMenu}>Work</a>
+                  <Link to='work' onClick={toggleMenu}>Work</Link>
                   <div className='overlay-menu-arrow'>
                     <MdArrowOutward size={50} className=' bg-black rounded-full text-white p-1' />
                   </div>
                 </li>
                 <hr className='w-full border-stone-500' />
                 <li className='overlay-menu-item text-5xl lg:text-7xl'>
-                  <a href="#services" onClick={toggleMenu}>Services</a>
+                  <Link to='services' onClick={toggleMenu}>Services</Link>
                   <div className='overlay-menu-arrow'>
                     <MdArrowOutward size={50} className=' bg-black rounded-full text-white p-1' />
                   </div>
                 </li>
                 <hr className='w-full border-stone-500' />
                 <li className='overlay-menu-item text-5xl lg:text-7xl'>
-                  <a href="#process" onClick={toggleMenu}>Process</a>
+                  <Link to='process' onClick={toggleMenu}>Process</Link>
                   <div className='overlay-menu-arrow'>
                     <MdArrowOutward size={50} className=' bg-black rounded-full text-white p-1' />
                   </div>
                 </li>
                 <hr className='w-full border-stone-500' />
                 <li className='overlay-menu-item text-5xl lg:text-7xl'>
-                  <a href="#contact" onClick={toggleMenu}>Contact</a>
+                  <Link to='contact' onClick={toggleMenu}>Contact</Link>
                   <div className='overlay-menu-arrow'>
                     <MdArrowOutward size={50} className=' bg-black rounded-full text-white p-1' />
                   </div>

@@ -27,7 +27,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <section ref={contactRef} className={`py-10 transition-colors duration-700 ${isContactInView ? 'bg-white text-[#1f1f1f]' : 'bg-[#030303] text-white'}`}>
+        <section id='contact' ref={contactRef} className={`py-10 transition-colors duration-700 ${isContactInView ? 'bg-white text-[#1f1f1f]' : 'bg-[#030303] text-white'}`}>
 
             <Marquee loop={0} speed={100} autoFill={true} className='overflow-hidden py-0 lg:py-2'>
                 <p className='text-6xl lg:text-8xl font-black uppercase tracking-tighter'> LET'S WORK TOGETHER.</p>
