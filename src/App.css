@@ -320,7 +320,6 @@ body {
   position: relative;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   z-index: 1;
-  display: flex;
   opacity: 1;
   padding: 20px 0px;
 }
@@ -335,27 +334,14 @@ body {
 }
 
 .categories {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  top: 50%;
-  left: 100%;
   transform: translate(-0%, -50%);
   width: 100%;
-  text-wrap: nowrap;
   z-index: -1;
   pointer-events: none;
-  padding: 10px;
 
 }
 
 .category-item {
-  background-color: whitesmoke;
-  color: #1f1f1f;
-  padding: 3px 10px;
-  margin: 5px;
-  border-radius: 8px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   transform: translateY(20px);
@@ -367,11 +353,6 @@ body {
 .service-item:hover .category-item {
   opacity: 1;
   transform: translateY(0);
-}
-
-
-.services-service:nth-child(3) {
-  padding: 100px;
 }
 
 .our-process-section {
