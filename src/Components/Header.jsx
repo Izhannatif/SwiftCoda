@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <div className=''>
-      <div className={`bg-[#ffffff21] ${menuOpen ?'text-black w-full p-5' : 'p-1 m-3 text-[#fff] w-11/12 rounded-full shadow-2xl backdrop-blur-sm'} flex lg:hidden flex-row justify-between items-center fixed left-0 top-0 z-50`}>
+      <div className={`bg-[#ffffff21] ${menuOpen ?'text-black w-full p-5' : 'p-1 text-[#fff] m-3 w-[95vw] rounded-full shadow-2xl backdrop-blur-sm'} flex lg:hidden flex-row justify-between items-center fixed left-0 top-0 z-50 w-full`}>
         <div className='w-max transition-all duration-700 hover:rotate-[360deg] hover:translate-x-12'>
             <p className='bg-black text-white text-2xl font-black text-center  rounded-full p-1'>SC</p>
         </div>
@@ -36,9 +36,9 @@ const Header = () => {
           {menuOpen ? <RxCross1 size={30} className='font-bold rotate-90' /> : <CiMenuFries size={30} className='font-black rotate-180' />}
         </div>
         <div className="flex flex-col space-y-3 mb-2">
-          <a href="mailto:hello@swiftcoda.com"><MdOutlineAlternateEmail size={24} /></a>
-          <a href="https://instagram.com"><FaInstagram size={24} /></a>
-          <a href="https://linkedin.com"><FaLinkedin size={24} /></a>
+          <a href="mailto:hello@swiftcoda.com" target='_blank'><MdOutlineAlternateEmail size={24} /></a>
+          <a href="https://instagram.com" target='_blank'><FaInstagram size={24} /></a>
+          <a href="https://linkedin.com" target='_blank'><FaLinkedin size={24} /></a>
         </div>
         <div className="text-2xl pl-20 rotate-[-90deg]">SwiftCoda.</div>
       </motion.div>

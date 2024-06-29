@@ -41,7 +41,11 @@ const Contact = () => {
                     <a href='mailto:hello@swiftcoda.com'><MdArrowOutward size={40} className='ml-2 bg-[#1f1f1f] text-white rounded-full p-1 hover:translate-x-5 hover:rotate-45 transition-all duration-500' /></a>
                 </span>
                 </div>
-                <div className='text-3xl lg:text-5xl contact-email font-light animate-bounce pt-10 lg:p-0'>hello@swiftcoda.com</div>
+                <div className='text-3xl lg:text-5xl contact-email font-light animate-bounce pt-10 lg:p-0'>
+                    <a href='mailto:hello@swiftcoda.com'>
+                        hello@swiftcoda.com
+                    </a>
+                </div>
             </div>
         </section>
     )

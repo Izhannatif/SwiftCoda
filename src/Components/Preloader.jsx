@@ -1,57 +1,103 @@
-import React, { useEffect, useState } from 'react'
-import { gsap } from 'gsap'
-const Preloader = () => {
+// import React, { useEffect, useState } from 'react'
+// import { gsap } from 'gsap'
+// const Preloader = () => {
 
-    const [preLoaderactive, setPreLoaderActive] = useState(true);
+//     const [preLoaderactive, setPreLoaderActive] = useState(true);
+
+//     useEffect(() => {
+
+//         if (preLoaderactive === true) {
+//             document.body.style.overflow = 'hidden';  // Disable scroll
+//         } else if (preLoaderactive === false) {
+//             document.body.style.overflow = 'auto';
+//             const overlay = document.querySelector('.overlay');
+//             console.log(overlay)
+//             overlay.style.position = "absoute";
+//             overlay.style.height = 0;
+//             overlay.style.width = 0;
+//             overlay.style.display = "none";
+//             // Enable scroll
+//         }
+//         startPreloader();
+//     }, [preLoaderactive]);
+
+//     async function startPreloader() {
+//         await gsap.to(".bar", 2, {
+//             delay: 0,
+//             height: 0,
+//             stagger: {
+//                 amount: 0.5,
+//             },
+//             ease: "power4.inOut"
+//         });
+//         setPreLoaderActive(false);
+
+//     }
+//     return (
+//         <>
+//             <div>
+//                 <div className="overlay">
+//                     <div className="bar"></div>
+//                     <div className="bar"></div>
+//                     <div className="bar"></div>
+//                     <div className="bar"></div>
+//                     <div className="bar"></div>
+//                     <div className="bar"></div>
+//                     <div className="bar"></div>
+//                     <div className="bar"></div>
+//                     <div className="bar"></div>
+//                     <div className="bar"></div>
+//                 </div> </div>
+//         </>
+//     )
+// }
+
+// export default Preloader
+
+import React, { useEffect, useState } from 'react';
+import { gsap } from 'gsap';
+
+const Preloader = () => {
+    const [preLoaderActive, setPreLoaderActive] = useState(true);
 
     useEffect(() => {
-
-        if (preLoaderactive === true) {
+        if (preLoaderActive) {
             document.body.style.overflow = 'hidden';  // Disable scroll
-        } else if (preLoaderactive === false) {
-            document.body.style.overflow = 'auto';    // Enable scroll
+            startPreloader();
+        } else {
+            document.body.style.overflow = 'auto'; // Enable scroll
+            fadeOutOverlay();
         }
-        startPreloader();
-    }, [preLoaderactive]);
+    }, [preLoaderActive]);
 
-    function startPreloader() {
-        let counterElement = document.querySelector(".counter");
-        let currentValue = 0;
-
-        function updateCounter() {
-            if (currentValue === 100) {
-                setPreLoaderActive(false);
-                return;
-            }
-            currentValue += Math.floor(Math.random() * 10) + 1;
-
-            if (currentValue >= 100) {
-                currentValue = 100
-            }
-            preLoaderactive ? counterElement.textContent = currentValue : null;
-            let delay = Math.floor(Math.random() * 200) + 50;
-            setTimeout(updateCounter, delay);
-
-        }
-        updateCounter();
-        gsap.to(".counter", 0.25, {
-            delay: 3.5,
-            opacity: 0,
-        });
-
-        gsap.to(".bar", 2, {
-            delay: 2.5,
+    async function startPreloader() {
+        await gsap.to(".bar", {
+            delay: 0,
             height: 0,
             stagger: {
                 amount: 0.5,
             },
-            ease: "power4.inOut"
+            ease: "power4.inOut",
+            duration: 2
+        });
+        setPreLoaderActive(false);
+    }
+
+    function fadeOutOverlay() {
+        gsap.to(".bar", {
+            opacity: 0,
+            height: 0,
+            duration: 1,  // Duration of fade-out
+            onComplete: () => {
+                const overlay = document.querySelector('.overlay');
+                overlay.style.display = 'none';  // Hide after fade-out is complete
+            }
         });
     }
+
     return (
-        <>
-            <div>
-                <h1 className="counter">0</h1>
+        <div>
+            {preLoaderActive && (
                 <div className="overlay">
                     <div className="bar"></div>
                     <div className="bar"></div>
@@ -63,9 +109,10 @@ const Preloader = () => {
                     <div className="bar"></div>
                     <div className="bar"></div>
                     <div className="bar"></div>
-                </div> </div>
-        </>
-    )
+                </div>
+            )}
+        </div>
+    );
 }
 
-export default Preloader
+export default Preloader;

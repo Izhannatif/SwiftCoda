@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -62,16 +64,8 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 1000;
   display: flex;
-}
-
-
-
-.bar {
-  height: 105vh;
-  width: 10vw;
-  background: whitesmoke;
 }
 
 .counter {
@@ -184,7 +178,7 @@ body {
   height: 105vh;
   width: 10vw;
   background: whitesmoke;
-  transition: height 1.5s ease;
+  transition: height 0.1s ease-in;
 }
 
 
@@ -538,4 +532,52 @@ canvas{
   font-size: 1.5rem;
   text-align: center;
   z-index: 10; /* Ensure it is on top of other elements */
+}
+
+
+/* Define a drop animation */
+@keyframes drop {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100vh) rotate(var(--rotation));
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the pills */
+.pill {
+  cursor: grab;
+  position: absolute;
+  opacity: 0;
+  animation: drop 2s forwards;
+  will-change: transform;
+  width: max-content !important;
+}
+
+/* Add a staggered delay for each pill */
+.pill:nth-child(1) {
+  animation-delay: 0s;
+}
+.pill:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.pill:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.pill:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.pill:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.pill:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.main-second-heading{
+  font-family: "Bebas Neue", sans-serif;
+
 }
