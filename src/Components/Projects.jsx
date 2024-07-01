@@ -15,29 +15,29 @@ const Projects = () => {
     const projects = [
         {
             imageUrl: project9,
-            date: '2024',
-            name: 'Project 101',
+            date: '2022',
+            name: 'Drawn Agency',
             cat1: 'Branding',
             cat2: 'Website'
         },
         {
             imageUrl: project13,
-            date: '2022',
-            name: 'Innovative Designs',
+            date: '2024',
+            name: 'Doze Mods',
             cat1: 'Website',
             cat2: 'Branding'
         },
         {
             imageUrl: project11,
-            date: '2021',
+            date: '2023',
             name: 'Cypherpunk Digital',
             cat1: 'Branding',
             cat2: 'Website'
         },
         {
             imageUrl: project12,
-            date: '2019',
-            name: 'Dynamic Web',
+            date: '2023',
+            name: 'Kindle Draft Publishers',
             cat1: 'Website',
             cat2: 'Marketing'
         },
