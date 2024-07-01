@@ -105,7 +105,7 @@ const services = [
     },
     {
         name: 'DEVELOPMENT',
-        categories: ['Web Development', 'App Development', 'E-commerce', 'SEO'],
+        categories: ['Shopify','Wordpress','Custom Websites' ,'App Development','CMS', 'SaaS'],
     },
     {
         name: 'DIGITAL',
