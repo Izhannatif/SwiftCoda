@@ -51,16 +51,11 @@ const About = () => {
                         <p className='text-lg px-3 lg:px-10 md:px-5 sm:px-3 font-medium'>* Who we are</p>
                     </div>
                     <div className="w-full lg:w-1/2 md:w-full sm:w-full pl-7 lg:pl-14 sm:pl-7">
-                        <p className='text-2xl lg:text-4xl md:text-3xl sm:text-2xl'>
-                            An independent web design and branding agency in Manchester set up in 2010 who care, build relationships, have industry experience, and win awards.
+                        <p className='text-xl lg:text-2xl md:text-3xl sm:text-2xl'>
+                            SwiftCoda - Where digital innovation meets strategic elevation. We're not just reshaping brands, we're pioneering new horizons in the digital realm. Our blend of cutting edge tech and creative finesse ensures your journey to success is swift and impactful.
                         </p>
                         <div className='flex flex-row items-center space-x-[-10px] mt-5 font-medium pb-10'>
-                            <button
-                                onClick={() => {
-                                    console.log('Button clicked');
-                                }}
-                                className='bg-white text-[#1f1f1f] rounded-3xl px-5 py-2'
-                            >
+                            <button className='bg-white text-[#1f1f1f] rounded-3xl px-5 py-2' >
                                 About SwiftCoda
                             </button>
                             <FaArrowRight
@@ -73,7 +68,7 @@ const About = () => {
             </section>
             <section id="clients" className=" py-10">
                 <Swiper
-                
+
                     slidesPerView={5}
                     breakpoints={{
                         // when window width is >= 320px
@@ -104,7 +99,7 @@ const About = () => {
                     autoplay={{
                         delay: 0,
                         disableOnInteraction: false,
-                        pauseOnMouseEnter:false,
+                        pauseOnMouseEnter: false,
 
                     }}
                     modules={[FreeMode, Autoplay, Pagination]}

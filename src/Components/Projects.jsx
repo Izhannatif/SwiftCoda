@@ -1,32 +1,41 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import { FaArrowRight } from 'react-icons/fa';
-
+import { Link } from 'react-scroll';
+import project11 from '../assets/project-11.png'
+import project12 from '../assets/project-12.jpg'
+import project13 from '../assets/project-13.jpg'
+import project4 from '../assets/project-4.jpg'
+import project5 from '../assets/project-5.png'
+import project6 from '../assets/project-6.png'
+import project7 from '../assets/project-7.png'
+import project8 from '../assets/project-8.png'
+import project9 from '../assets/project-9.png'
 const Projects = () => {
     const projects = [
         {
-            imageUrl: 'https://made-byshape.transforms.svdcdn.com/production/uploads/images/sketch-website.jpg?w=1200&h=900&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1707141871&s=438e1e3662fb9fbb53df517ff93b4a4a',
+            imageUrl: project9,
             date: '2024',
             name: 'Project 101',
             cat1: 'Branding',
             cat2: 'Website'
         },
         {
-            imageUrl: 'https://made-byshape.transforms.svdcdn.com/production/uploads/images/Projects/Monday-Clicks/Thumbnail-Square-2.jpg?w=800&h=600&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1683035994&s=87c7136fa83e17615f921ba511fc96da',
+            imageUrl: project13,
             date: '2022',
             name: 'Innovative Designs',
             cat1: 'Website',
             cat2: 'Branding'
         },
         {
-            imageUrl: 'https://made-byshape.transforms.svdcdn.com/production/uploads/images/Projects/Idyll-Home/LIFESTYLE_MODULE-MOUSSE.jpeg?w=1119&h=839.25&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1619171556&s=f799965d6c518f9d3684b13e20af5513',
+            imageUrl: project11,
             date: '2021',
-            name: 'Tech Advancements',
-            cat1: 'Marketing',
+            name: 'Cypherpunk Digital',
+            cat1: 'Branding',
             cat2: 'Website'
         },
         {
-            imageUrl: 'https://made-byshape.transforms.svdcdn.com/production/uploads/images/Projects/Time/Time-Thumbnail.jpg?w=1200&h=900&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1674121789&s=c81c471c983dbf624bd474b4f665bc59',
+            imageUrl: project12,
             date: '2019',
             name: 'Dynamic Web',
             cat1: 'Website',
@@ -43,28 +52,25 @@ const Projects = () => {
                         key={index}
                         imageUrl={project.imageUrl}
                         date={project.date}
-                        name={project.name}
                         cat1={project.cat1}
                         cat2={project.cat2}
+                        projectName={project.name}
                     />
                 ))}
             </div>
             <div className='float-none lg:float-right mt-0 lg:-mt-24 pr-0 lg:pr-60 pt-5 lg:pt-0'>
                 <div className='text-4xl  pb-5 lg:pb-0 '>Like what you see?</div>
-                <div className='flex flex-row items-center -space-x-2 mt-2 font-medium'>
+                <Link to='contact'><div className='flex flex-row items-center -space-x-2 mt-2 font-medium'>
                     <button
-                        onClick={() => {
-                            console.log('Button clicked');
-                        }}
                         className='bg-white text-[#1f1f1f] rounded-3xl px-4 py-2 text-md'
                     >
-                       Contact us
+                        Contact us
                     </button>
                     <FaArrowRight
                         size={35}
                         className='bg-white text-[#1f1f1f] p-3 rounded-full -rotate-45 hover:-rotate-0 transition-all duration-300 hover:translate-x-4'
                     />
-                </div>
+                </div></Link>
             </div>
 
         </section>

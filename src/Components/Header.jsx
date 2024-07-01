@@ -50,7 +50,7 @@ const Header = () => {
             initial={{ x: "-100%", opacity:0 }}
             animate={{ x: "0%", opacity:1 }}
             exit={{ x: "-100%", opacity:0 }}
-            transition={{ duration: 1,ease:"easeInOut" }}
+            transition={{ duration: 0.5,ease:"easeInOut" }}
             key="menu"
           >
             <div className="w-full lg:w-1/2 pl-0 lg:pl-20 h-full">

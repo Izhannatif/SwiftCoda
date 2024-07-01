@@ -49,7 +49,7 @@ const Home = () => {
     <CursorProvider>
       <motion.div
         ref={cursorRef}
-        className="cursor hidden xl:block lg:block md:hidden sm:hidden"
+        className="cursor hidden xl:block lg:block md:hidden sm:hidden shadow-2xl"
         style={{
           position: 'fixed',
           borderRadius: '50%',
