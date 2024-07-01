@@ -30,7 +30,7 @@ const Header = () => {
         className={`header-container fixed top-0 left-0 w-12 h-full py-5 px-2 flex flex-col justify-between items-center text-black z-30  lg:flex md:hidden sm:hidden`}
         initial={{ x: '-100%' }}
         animate={{ x: '0%' }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
+        transition={{ duration: 1, ease: 'easeOut' }}
       >
         <div className="flex flex-col space-y-4" onClick={toggleMenu}>
           {menuOpen ? <RxCross1 size={30} className='font-bold rotate-90' /> : <CiMenuFries size={30} className='font-black rotate-180' />}
@@ -47,10 +47,10 @@ const Header = () => {
         {menuOpen && (
           <motion.div
             className={`overlay-menu fixed inset-0 bg-[#030303] text-white flex flex-row items-center justify-center pt-10 lg:pt-0 z-20 pl-5 lg:pl-20 text-left`}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ x: "-100%", opacity:0 }}
+            animate={{ x: "0%", opacity:1 }}
+            exit={{ x: "-100%", opacity:0 }}
+            transition={{ duration: 1,ease:"easeInOut" }}
             key="menu"
           >
             <div className="w-full lg:w-1/2 pl-0 lg:pl-20 h-full">
