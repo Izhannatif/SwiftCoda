@@ -53,7 +53,7 @@ const Header = () => {
             transition={{ duration: 0.5,ease:"easeInOut" }}
             key="menu"
           >
-            <div className="w-full lg:w-1/2 pl-0 lg:pl-20 h-full">
+            <div className="w-full lg:w-1/2 pl-0 lg:pl-20 h-full tracking-tighter">
               <ul className="text-2xl h-full flex flex-col justify-evenly font-bold lg:font-semibold">
                 <li className='overlay-menu-item text-5xl lg:text-7xl'>
                   <Link to='home' onClick={toggleMenu}>Home</Link>

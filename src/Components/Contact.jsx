@@ -11,14 +11,13 @@ const Contact = () => {
                 setIsContactInView(entry.isIntersecting);
             },
             {
-                threshold: 0.5, // Trigger when 50% of the element is visible
+                threshold: 0.5,
             }
         );
 
         if (contactRef.current) {
             observer.observe(contactRef.current);
         }
-
         return () => {
             if (contactRef.current) {
                 observer.unobserve(contactRef.current);
