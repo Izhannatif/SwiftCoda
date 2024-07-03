@@ -30,14 +30,14 @@
 //       <Marquee loop={0} speed={125} autoFill={true} direction='right' className='overflow-hidden py-0 lg:py-2 '>
 //         <p className='text-[#646464c4] text-6xl lg:text-8xl font-black uppercase tracking-tighter'> <span className='hover:text-white  transition-all duration-500'>INNOVATE</span> .<span className='hover:text-white  transition-all duration-500'> ELEVATE .</span> <span className='hover:text-white  transition-all duration-500'>DOMINATE&nbsp;.</span>&nbsp;</p>
 //       </Marquee>
-      
+
 //       {/* <Pills /> */}
 //       <div className='text-center flex flex-col justify-center items-center'>
 //         <CiDesktopMouse1 size={30} className='text-white' />
 //         <div>scroll</div>
 //         <IoIosArrowRoundDown size={30} className='text-white animate-bounce pt-2' />
 //       </div>
-      
+
 //     </div>
 //   );
 // }
@@ -90,11 +90,13 @@ const MainPage = () => {
     <div id='home' className="main-page w-full flex flex-col justify-evenly items-center h-screen md:pl-5 sm:pl-5 relative">
       <div className='h-[50vh] lg:h-[60vh] w-full flex flex-col items-center justify-end pb-10'>
         <div className="text-6xl lg:text-9xl md:text-5xl text-white rounded-3xl font-bold flex justify-center items-start pl-3 -mt-20">
-          <div className=''>SwiftCoda.</div>
+          <div className=''>
+            <h1>SwiftCoda.</h1>
+          </div>
         </div>
         <div className='rounded-xl text-white flex flex-col justify-center items-center p-4'>
           <div className='text-2xl lg:text-2xl md:2xl tracking-tight pb-5'>
-            Web Design and Branding Agency.
+            <h2>Web Design and Branding Agency.</h2>
           </div>
           <div className='flex flex-row space-x-5 py-3'>
             <Link to='work'>
