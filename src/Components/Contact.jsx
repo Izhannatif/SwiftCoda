@@ -7,7 +7,7 @@ const Contact = () => {
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                console.log('contact in view')
+                // console.log('contact in view')
                 setIsContactInView(entry.isIntersecting);
             },
             {

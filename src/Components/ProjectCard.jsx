@@ -11,7 +11,7 @@ const ProjectCard = ({ imageUrl, date, projectName, cat1, cat2 }) => {
       backgroundColor: 'white',
       mixBlendMode: 'difference',
     });
-    console.log('project mouse entered');
+    // console.log('project mouse entered');
   };
 
   const handleMouseLeave = () => {
@@ -21,7 +21,7 @@ const ProjectCard = ({ imageUrl, date, projectName, cat1, cat2 }) => {
       backgroundColor: 'whitesmoke',
       mixBlendMode: 'normal',
     });
-    console.log('project mouse left');
+    // console.log('project mouse left');
   };
 
   return (

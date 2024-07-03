@@ -66,7 +66,7 @@ const Preloader = () => {
             startPreloader();
         } else {
             document.body.style.overflow = 'auto'; // Enable scroll
-            fadeOutOverlay();
+            // fadeOutOverlay();
         }
     }, [preLoaderActive]);
 
@@ -83,17 +83,17 @@ const Preloader = () => {
         setPreLoaderActive(false);
     }
 
-    function fadeOutOverlay() {
-        gsap.to(".bar", {
-            opacity: 0,
-            height: 0,
-            duration: 1,  // Duration of fade-out
-            onComplete: () => {
-                const overlay = document.querySelector('.overlay');
-                overlay.style.display = 'none';  // Hide after fade-out is complete
-            }
-        });
-    }
+    // function fadeOutOverlay() {
+    //     gsap.to(".bar", {
+    //         opacity: 0,
+    //         height: 0,
+    //         duration: 1,  // Duration of fade-out
+    //         onComplete: () => {
+    //             const overlay = document.querySelector('.overlay');
+    //             overlay.style.display = 'none';  // Hide after fade-out is complete
+    //         }
+    //     });
+    // }
 
     return (
         <div>
