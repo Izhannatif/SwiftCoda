@@ -37,8 +37,8 @@ const Header = () => {
         </div>
         <div className="flex flex-col space-y-3 mb-2">
           <a href="mailto:hello@swiftcoda.com" target='_blank'><MdOutlineAlternateEmail size={24} /></a>
-          <a href="https://instagram.com" target='_blank'><FaInstagram size={24} /></a>
-          <a href="https://linkedin.com" target='_blank'><FaLinkedin size={24} /></a>
+          <a href="https://www.instagram.com/encoremnd" target='_blank'><FaInstagram size={24} /></a>
+          <a href="https://www.linkedin.com/company/encoremnd" target='_blank'><FaLinkedin size={24} /></a>
         </div>
         <div className="text-2xl pl-20 rotate-[-90deg]">SwiftCoda.</div>
       </motion.div>
