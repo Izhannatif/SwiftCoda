@@ -10,6 +10,8 @@ import { motion } from 'framer-motion';
 import { CursorProvider, CursorContext } from '../context/CursorContext';
 import OurProcess from '../Components/OurProcess';
 import Contact from '../Components/Contact';
+import ReactGA from 'react-ga4';
+
 
 const Home = () => {
   const cursorRef = useRef(null);
@@ -20,6 +22,11 @@ const Home = () => {
   const { cursorStyle } = useContext(CursorContext);
 
   useEffect(() => {
+    ReactGA.send({
+      hitType:"pageView",
+      page:'/',
+      title:"Home"
+    })
     const handleMouseMove = (e) => {
       mousePosition.current = { x: e.clientX, y: e.clientY };
     };
