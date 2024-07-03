@@ -46,7 +46,7 @@ const Projects = () => {
     return (
         <section id='work' className='p-1 lg:p-20 project-section w-full h-full py-10 lg:py-5'>
             <div className='pl-1 lg:pl-32 md:pl-5 sm:pl-5 text-3xl lg:text-5xl project-heading'>Take a look at <br className='hidden lg:block' /> our projects</div>
-            <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col justify-around items-center flex-nowrap lg:flex-wrap'>
+            <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col justify-around items-center flex-nowrap lg:flex-wrap md:flex-nowrap'>
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={index}

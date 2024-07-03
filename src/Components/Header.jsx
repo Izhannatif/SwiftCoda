@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <div className=''>
-      <div className={`bg-[#ffffff21] ${menuOpen ?'text-black w-full p-5' : 'p-1 text-[#fff] m-3 w-[95vw] rounded-full shadow-2xl backdrop-blur-sm'} flex lg:hidden flex-row justify-between items-center fixed left-0 top-0 z-50 w-full`}>
+      <div className={`bg-[#ffffff21] ${menuOpen ?'text-black w-full p-5 backdrop-blur-0' : 'p-1 m-4 text-[#fff]  w-[93vw] rounded-full shadow-2xl backdrop-blur-sm'} flex lg:hidden flex-row justify-between items-center fixed left-0 top-0 z-50 w-full`}>
         <div className='w-max transition-all duration-700 hover:rotate-[360deg] hover:translate-x-12'>
             <p className='bg-black text-white text-2xl font-black text-center  rounded-full p-1'>SC</p>
         </div>

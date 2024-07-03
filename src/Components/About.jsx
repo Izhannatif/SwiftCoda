@@ -41,6 +41,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Autoplay, Pagination } from 'swiper/modules';
+import { Link } from 'react-scroll';
 
 const About = () => {
     return (
@@ -54,15 +55,15 @@ const About = () => {
                         <p className='text-xl lg:text-2xl md:text-3xl sm:text-2xl'>
                             SwiftCoda - Where digital innovation meets strategic elevation. We're not just reshaping brands, we're pioneering new horizons in the digital realm. Our blend of cutting edge tech and creative finesse ensures your journey to success is swift and impactful.
                         </p>
-                        <div className='flex flex-row items-center space-x-[-10px] mt-5 font-medium pb-10'>
+                        <Link to={'services'}><div className='flex flex-row items-center space-x-[-10px] mt-5 font-medium pb-10'>
                             <button className='bg-white text-[#1f1f1f] rounded-3xl px-5 py-2' >
-                                About SwiftCoda
+                               Our Services
                             </button>
                             <FaArrowRight
                                 size={40}
-                                className='bg-white text-[#1f1f1f] p-3 rounded-full -rotate-45 hover:-rotate-0 transition-all duration-300 hover:translate-x-4'
+                                className='bg-white text-[#1f1f1f] p-3 rounded-full rotate-45 hover:rotate-90 transition-all duration-300 hover:translate-x-4'
                             />
-                        </div>
+                        </div></Link>
                     </div>
                 </div>
             </section>

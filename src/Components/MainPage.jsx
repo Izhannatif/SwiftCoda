@@ -107,17 +107,17 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-      <Marquee loop={0} speed={125} autoFill={true} direction='right' className='overflow-hidden py-0 lg:py-2'>
+      <Marquee loop={0} speed={125} autoFill={true} direction='left' className='overflow-hidden py-0 lg:py-2'>
         <p className='text-[#646464c4] text-6xl lg:text-8xl font-black uppercase tracking-tighter'>
           <span className='hover:text-white transition-all duration-500'>INNOVATE</span> .<span className='hover:text-white transition-all duration-500'> ELEVATE .</span> <span className='hover:text-white transition-all duration-500'>DOMINATE&nbsp;.</span>&nbsp;
         </p>
       </Marquee>
 
-      <div className='pills-container'>
+      <div className='hidden pills-container'>
         {pills.map(pill => (
           <div
             key={pill.id}
-            className='pill'
+            className='pill absolute bg-[#e6e6e6] shadow-[0px 1px 10px #131313] text-[#030303] rounded-full text-sm px-2 py-1 lg:px-3 lg:py-2 lg:text-base text-center'
             style={{ top: pill.position.top, left: pill.position.left }}
           >
             {pill.text}
