@@ -68,15 +68,12 @@ const Home = () => {
         }}
       />
       <main>
-        <Header />
         <MainPage />
         <About />
         <Projects />
         <Services />
         <OurProcess />
         <Contact />
-        <Footer />
-
       </main>
     </CursorProvider>
   </>
