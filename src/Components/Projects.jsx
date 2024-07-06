@@ -5,11 +5,6 @@ import { Link } from 'react-scroll';
 import project11 from '../assets/project-11.png'
 import project12 from '../assets/project-12.jpg'
 import project13 from '../assets/project-13.jpg'
-import project4 from '../assets/project-4.jpg'
-import project5 from '../assets/project-5.png'
-import project6 from '../assets/project-6.png'
-import project7 from '../assets/project-7.png'
-import project8 from '../assets/project-8.png'
 import project9 from '../assets/project-9.png'
 const Projects = () => {
     const projects = [
@@ -18,28 +13,32 @@ const Projects = () => {
             date: '2022',
             name: 'Drawn Agency',
             cat1: 'Branding',
-            cat2: 'Website'
+            cat2: 'Web Design',
+            projectUrl: '/'
         },
         {
             imageUrl: project13,
             date: '2024',
             name: 'Doze Mods',
             cat1: 'Website',
-            cat2: 'Branding'
+            cat2: 'Branding',
+            projectUrl: 'https://www.dozemods.com'
         },
         {
             imageUrl: project11,
             date: '2023',
             name: 'Cypherpunk Digital',
             cat1: 'Branding',
-            cat2: 'Website'
+            cat2: 'Website',
+            projectUrl: 'https://www.cypherpunk.digital'
         },
         {
             imageUrl: project12,
             date: '2023',
             name: 'Kindle Draft Publishers',
             cat1: 'Website',
-            cat2: 'Marketing'
+            cat2: 'Marketing',
+            projectUrl: 'https://www.kindledraftpublishers.com'
         },
     ];
 
@@ -55,6 +54,7 @@ const Projects = () => {
                         cat1={project.cat1}
                         cat2={project.cat2}
                         projectName={project.name}
+                        projectUrl={project.projectUrl}
                     />
                 ))}
             </div>
