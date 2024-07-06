@@ -54,10 +54,6 @@ body {
   /* overflow: hidden; */
 }
 
-.preloader-header {
-  /* background-image: url('https://media3.giphy.com/media/3o6vXRxrhj7Ov94Gbu/200w.gif?cid=6c09b9520g7bcmw1zeg9t4m8ed7w6ssdvtglijegemykc335&ep=v1_gifs_search&rid=200w.gif&ct=g'); */
-}
-
 .overlay {
   position: fixed;
   width: 100vw;
