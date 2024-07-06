@@ -4,6 +4,8 @@ import { MdArrowOutward } from "react-icons/md";
 import ReactGA from 'react-ga4';
 import { CursorContext, CursorProvider } from '../context/CursorContext';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import Home from '../Pages/Home';
 
 const Custom404 = () => {
   const cursorRef = useRef(null);
@@ -62,10 +64,10 @@ const Custom404 = () => {
             <p className='text-4xl lg:text-6xl font-black p-3 uppercase tracking-tighter'>404 Error&nbsp;.&nbsp; where am i ?</p>
           </Marquee>
         </div>
-        <div className='bg-white text-black pr-5 pl-5 py-2 rounded-full flex items-center justify-evenly w-max space-x-2 home-404-btn'>
+        <Link to={'/'} ><div className='bg-white text-black pr-5 pl-5 py-2 rounded-full flex items-center justify-evenly w-max space-x-2 home-404-btn'>
           <p className='font-semibold'>Take me home</p>
           <div className=' bg-black text-white rounded-full '><MdArrowOutward size={20} className='home-404-arrow bg-black text-white rounded-full' /></div>
-        </div>
+        </div></Link>
       </section>
       </>
     // </CursorProvider> 
