@@ -27,7 +27,7 @@ const ProjectCard = ({ imageUrl, date, projectName, cat1, cat2, projectUrl }) =>
   return (
 
     <div
-      className='w-full lg:w-1/3 md:w-full sm:w-full h-[50vh] bg-cover bg-center rounded-lg shadow-md m-5  project-card relative p-2  '
+      className='w-full lg:w-[60vh] md:w-full sm:w-full h-[55vh]  bg-cover bg-center rounded-lg shadow-md m-5  project-card relative p-2  '
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

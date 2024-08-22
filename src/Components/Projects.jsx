@@ -6,15 +6,16 @@ import project11 from '../assets/project-11.png'
 import project12 from '../assets/project-12.jpg'
 import project13 from '../assets/project-13.jpg'
 import project9 from '../assets/project-9.png'
+import project14 from '../assets/project-14.png'
 const Projects = () => {
     const projects = [
         {
-            imageUrl: project9,
+            imageUrl: project14,
             date: '2022',
-            name: 'Drawn Agency',
+            name: 'Ecommerce Store',
             cat1: 'Branding',
             cat2: 'Web Design',
-            projectUrl: '/'
+            projectUrl: 'www.ecommerce-swiftcoda.vercel.app'
         },
         {
             imageUrl: project13,
