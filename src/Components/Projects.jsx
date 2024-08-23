@@ -15,7 +15,7 @@ const Projects = () => {
             name: 'Ecommerce Store',
             cat1: 'Branding',
             cat2: 'Web Design',
-            projectUrl: 'https://www.ecommerce-swiftcoda.vercel.app'
+            projectUrl: 'https://ecommerce-swiftcoda.vercel.app'
         },
         {
             imageUrl: project13,
