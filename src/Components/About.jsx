@@ -43,6 +43,13 @@ import 'swiper/css/pagination';
 import { FreeMode, Autoplay, Pagination } from 'swiper/modules';
 import { Link } from 'react-scroll';
 
+import redbull from '../assets/redbull-logo.png'
+import gloriajeans from '../assets/gloriajeans-logo.png'
+import honda from '../assets/honda-logo.png'
+import careem from '../assets/careem-logo.png'
+import intDigital from '../assets/intdigital-logo.png'
+import jaffer from '../assets/jaffer-logo.png'
+import ds from '../assets/ds-logo.png'
 const About = () => {
     return (
         <>
@@ -67,7 +74,9 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section id="clients" className=" py-10">
+            <section id="clients" className="py-10 md:py-20">
+                {/* <div className='text-9xl absolute z-10 opacity-5 text-center right-[25%] font-black tracking-widest '>PARTNERS</div> */}
+                <div className='text-6xl md:text-7xl lg:text-9xl text-white z-10 absolute  opacity-5 font-black tracking-widest left-3 md:left-28 leading-1 md:leading-10'>PARTNERS</div>
                 <Swiper
 
                     slidesPerView={5}
@@ -88,14 +97,11 @@ const About = () => {
                             spaceBetween: 40
                         }
                     }}
-                    spaceBetween={30}
+                    spaceBetween={0}
                     freeMode={true}
-
-                    // pagination={{
-                    //     clickable: true,
-                    // }}
-                    centeredSlides={true}
+                    centeredSlides={false}
                     loop={true}
+
                     speed={5000}
                     autoplay={{
                         delay: 0,
@@ -104,26 +110,30 @@ const About = () => {
 
                     }}
                     modules={[FreeMode, Autoplay, Pagination]}
-                    className="mySwiper"
+                    className="mySwiper z-20 "
                 >
                     <SwiperSlide>
-                        <img width={100} height={100} src="https://white.logodownload.org/wp-content/uploads/2020/11/google-white-logo-1.png" alt="Client 2" className="client-logo" />
+                        <img width={120} height={100} src={careem} alt="Careem" className="client-logo pt-6 " />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img width={100} height={100} src="https://pngimg.com/uploads/meta/meta_PNG7.png" alt="Client 2" className="client-logo" />
+                        <img width={100} height={100} src={honda} alt="Honda" className="client-logo" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img width={100} height={100} src="https://cdn.freebiesupply.com/logos/large/2x/microsoft-logo-black-and-white.png" alt="Client 2" className="client-logo" />
+                        <img width={100} height={100} src={redbull} alt="Red Bull" className="client-logo invert " />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img width={100} height={100} src="https://white.logodownload.org/wp-content/uploads/2020/11/google-white-logo-1.png" alt="Client 2" className="client-logo" />
+                        <img width={200} height={100} src={gloriajeans} alt="Gloria Jeans" className="client-logo invert pt-8" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img width={100} height={100} src="https://pngimg.com/uploads/meta/meta_PNG7.png" alt="Client 2" className="client-logo" />
+                        <img width={70} height={50} src={jaffer} alt="Gloria Jeans" className="client-logo invert" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img width={100} height={100} src="https://cdn.freebiesupply.com/logos/large/2x/microsoft-logo-black-and-white.png" alt="Client 2" className="client-logo" />
+                        <img width={100} height={10} src={intDigital} alt="Gloria Jeans" className="client-logo pt-2 " />
                     </SwiperSlide>
+                    <SwiperSlide>
+                        <img width={120} height={100} src={ds} alt="Gloria Jeans" className="client-logo pt-5" />
+                    </SwiperSlide>
+                    
 
                 </Swiper>
             </section>
