@@ -61,12 +61,12 @@ const Custom404 = () => {
       <section className='h-screen flex flex-col w-full bg-black text-white pl-0 lg:pl-20 items-center justify-center space-y-5'>
         <div className='w-full  lg:w-2/3'>
           <Marquee loop={0} speed={100} autoFill={true} className='overflow-hidden py-0 lg:py-2 border-t-2 border-b-2'>
-            <p className='text-4xl lg:text-6xl font-black p-3 uppercase tracking-tighter'>404 Error&nbsp;.&nbsp; where am i ?</p>
+            <p className='text-4xl lg:text-6xl font-black p-3 uppercase tracking-tighter'>404 Error&nbsp;.&nbsp;where am i ?</p>
           </Marquee>
         </div>
-        <Link to={'/'} ><div className='bg-white text-black pr-5 pl-5 py-2 rounded-full flex items-center justify-evenly w-max space-x-2 home-404-btn'>
-          <p className='font-semibold'>Take me home</p>
-          <div className=' bg-black text-white rounded-full '><MdArrowOutward size={20} className='home-404-arrow bg-black text-white rounded-full' /></div>
+        <Link to={'/'} ><div className='bg-white text-black h-10 pr-5 pl-5 py-2 rounded-full flex items-center justify-evenly w-max space-x-2 home-404-btn'>
+          <p className='font-semibold text-xl uppercase'>Take me home</p>
+          <div className=' bg-black text-white rounded-full '><MdArrowOutward  className='home-404-arrow bg-black text-white p-1 rounded-full h-8 w-8' /></div>
         </div></Link>
       </section>
       </>
