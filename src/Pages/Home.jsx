@@ -63,7 +63,7 @@ const Home = () => {
           borderRadius: '50%',
           pointerEvents: 'none',
           transition: 'transform 0.1s ease, height 0.1s ease, width 0.1s ease',
-          zIndex: 10000,
+          zIndex: 1000000,
           ...cursorStyle,
         }}
       />

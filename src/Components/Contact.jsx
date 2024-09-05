@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { InlineWidget, PopupButton, PopupWidget } from 'react-calendly';
 import Marquee from "react-fast-marquee";
 import { MdArrowOutward } from "react-icons/md";
 const Contact = () => {
@@ -34,7 +35,18 @@ const Contact = () => {
             <Marquee loop={0} speed={100} autoFill={true} direction='right' className='overflow-hidden py-0 lg:py-2'>
                 <p className='text-6xl lg:text-8xl font-black uppercase tracking-tighter'>LET'S WORK TOGETHER&nbsp;.&nbsp;</p>
             </Marquee>
+            {/* <PopupButton styles={{textAlign:'center', width:'100%', overflow:'hidden'}} rootElement={document.getElementById("root")}
+                text="Click here to schedule!"
+                textColor="#ffffff"
+                color="#00a2ff" url='https://calendly.com/hello-swiftcoda/30min' /> */}
+            <PopupWidget
+                url="https://calendly.com/hello-swiftcoda/30min"
+                rootElement={document.getElementById("root")}
+                text="Book Your Free Session!"
+                textColor="#000"
 
+                color="#ffff"
+            />
             <div className='pl-1 lg:pl-20 pr-5 py-5 flex flex-col lg:flex-row justify-around items-center'>
                 <div className='text-6xl font-medium'>Have something in mind? 💡 <br /><span className='pt-2 text-4xl flex'>Reach out to us.
                     <a href='mailto:hello@swiftcoda.com'><MdArrowOutward size={40} className='ml-2 bg-[#1f1f1f] text-white rounded-full p-1 hover:translate-x-5 hover:rotate-45 transition-all duration-500' /></a>
@@ -46,7 +58,7 @@ const Contact = () => {
                     </a>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

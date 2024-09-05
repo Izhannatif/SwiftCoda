@@ -187,7 +187,7 @@ body {
   top: 0;
   left: 0;
   pointer-events: none !important;
-  z-index: 100000;
+  z-index: 10000000;
   transition: height 0.3s ease, width 0.3s ease, background-color 0.3s ease;
 }
 
