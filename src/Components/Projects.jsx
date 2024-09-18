@@ -2,20 +2,19 @@ import React from 'react'
 import ProjectCard from './ProjectCard'
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-scroll';
-import project11 from '../assets/project-11.png'
-import project12 from '../assets/project-12.jpg'
-import project13 from '../assets/project-13.jpg'
-import project9 from '../assets/project-9.png'
-import project14 from '../assets/project-14.png'
+import project11 from '../assets/project-11.png';
+import project12 from '../assets/project-12.jpg';
+import project13 from '../assets/project-13.jpg';
+import project15 from '../assets/project-15.PNG';
 const Projects = () => {
     const projects = [
         {
-            imageUrl: project14,
-            date: '2022',
-            name: 'Ecommerce Store',
+            imageUrl: project15,
+            date: '2024',
+            name: 'DigitalSponge',
             cat1: 'Branding',
-            cat2: 'Web Design',
-            projectUrl: 'https://ecommerce-swiftcoda.vercel.app'
+            cat2: 'Web Development',
+            projectUrl: 'https://digitalsponge.us'
         },
         {
             imageUrl: project13,
@@ -45,7 +44,7 @@ const Projects = () => {
 
     return (
         <section id='work' className='p-1 lg:p-20 project-section w-full h-full py-10 lg:py-5'>
-            <div className='pl-1 lg:pl-32 md:pl-5 sm:pl-5 text-3xl lg:text-5xl project-heading'>Take a look at <br className='hidden lg:block' /> our projects</div>
+            <div className='pl-1 lg:pl-32 md:pl-5 sm:pl-5 text-3xl lg:text-5xl project-heading z-50'>Take a look at <br className='hidden lg:block' /> our projects</div>
             <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col justify-around items-center flex-nowrap lg:flex-wrap md:flex-nowrap'>
                 {projects.map((project, index) => (
                     <ProjectCard
